@@ -1,0 +1,7 @@
+# project discription
+
+An implementation of keyword-bert model in my paper `Keyword-Attentive Deep Semantic Matching`
+
+For detailed descriptions of the whole pipeline ,refer to my [Chinese blog](https://zhuanlan.zhihu.com/DataMiner-X)
+
+For detailed code running guidance, refer to `keyword-bert/readme.md`
