@@ -1,6 +1,6 @@
 # experiments descriptions
 ```
-network structure of keyword-bert:
+network structure of Keyword-BERT:
 
 h(CLS)<= transformer |  keyword attention transformer => h_keyword(AB)
   	 layer  n    |  layer n
@@ -14,10 +14,16 @@ h(CLS)<= transformer |  keyword attention transformer => h_keyword(AB)
   	    embedding layer
 ```
 
+# change list (compare to raw BERT)
+`extract_features.py`: Add keyword mask parsing from training data
+`model.py`: Add keyword attention layer.
+`run_classifier.py`: Add fusion layer. Add hooks to print training loss and 
+iteration steps.
 
 # data preparation
+Remember to add `keyword mask` to raw BERT training data, plz refer to `pre_tokenize.py` and
+ `data` folder for more details
 
-Remember to add `keyword mask` to raw BERT training data, plz refer to `data` folder for more details
 For data privacy, we only publish a small sample of our real data.
 
 # training procedure
