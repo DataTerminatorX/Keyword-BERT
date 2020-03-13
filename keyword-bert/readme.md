@@ -16,7 +16,9 @@ h(CLS)<= transformer |  keyword attention transformer => h_keyword(AB)
 
 # change list (compare to raw BERT)
 `extract_features.py`: Add keyword mask parsing from training data
+
 `model.py`: Add keyword attention layer.
+
 `run_classifier.py`: Add fusion layer. Add hooks to print training loss and 
 iteration steps.
 
