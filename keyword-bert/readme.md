@@ -29,7 +29,9 @@ Remember to add `keyword mask` to raw BERT training data, plz refer to `pre_toke
 For data privacy, we only publish a small sample of our real data.
 
 # training procedure
-1. Prepare you own training data
+1. Prepare you own training and test data
 2. Copy bert pre-trained Chinese large model to `pre_trained`
-3. Modify hyper-parameters in `run.sh` and then run it
+3. Modify model hyper-parameters in `pre_trained/bert_config.json`. 
+Modify running parameter in `run.sh` (if needed). 
+4. Execute `run.sh`
 
