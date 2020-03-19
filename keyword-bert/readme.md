@@ -14,16 +14,16 @@ h(CLS)<= transformer |  keyword attention transformer => h_keyword(AB)
   	    embedding layer
 ```
 
-# change list (compare to raw BERT)
-`extract_features.py`: Add keyword mask parsing from training data
+# change list (compared with vanilla BERT)
+`extract_features.py`: Add keyword mask (parsing from training data)
 
-`model.py`: Add keyword attention layer.
+`model.py`: Add a keyword attention layer.
 
-`run_classifier.py`: Add fusion layer. Add hooks to print training loss and 
+`run_classifier.py`: Add a fusion layer. Add hooks to print training loss and 
 iteration steps.
 
 # data preparation
-Remember to add `keyword mask` to raw BERT training data, plz refer to `pre_tokenize.py` and
+Remember to add `keyword mask` to vanilla BERT training data, plz refer to `pre_tokenize.py` and
  `data` folder for more details
 
 For data privacy, we only publish a small sample of our real data.
