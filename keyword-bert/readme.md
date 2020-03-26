@@ -20,13 +20,11 @@ h(CLS)<= transformer |  keyword attention transformer => h_keyword(AB)
 `run_classifier.py`: 
   * Add keyword mask (parsing from training data). 
   * Add a fusion layer. 
-  * Add hooks to print training loss and 
+  * Add hooks to print training loss and
 iteration steps.
 
 # data preparation
-Remember to add `keyword mask` to vanilla BERT training data, plz refer to `pre_tokenize.py` and
- `data` folder for more details
-
+Add `keyword mask` to vanilla BERT training data. (plz refer to `data/convert_to_bert_keyword.py` and `pre_tokenize.py`)
 For data privacy, we only publish a small sample of our real data.
 
 # training procedure
