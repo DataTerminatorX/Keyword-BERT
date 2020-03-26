@@ -2,6 +2,8 @@
 ```
 network structure of Keyword-BERT:
 
+	  fusion layer & output layer balabala...
+	 ---------------------
 h(CLS)<= transformer |  keyword attention transformer => h_keyword(AB)
   	 layer  n    |  layer n
   	 ---------------------
@@ -15,7 +17,9 @@ h(CLS)<= transformer |  keyword attention transformer => h_keyword(AB)
 ```
 
 # change list (compared with vanilla BERT)
-`model.py`: Add a keyword attention layer.
+`model.py`: 
+  * Add a keyword attention layer.
+  * Add a flexible layer-num configuration
 
 `run_classifier.py`: 
   * Add keyword mask (parsing from training data). 
