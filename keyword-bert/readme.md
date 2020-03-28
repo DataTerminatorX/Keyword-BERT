@@ -29,6 +29,7 @@ iteration steps.
 
 # data preparation
 Add `keyword mask` to vanilla BERT training data. (plz refer to `data/convert_to_bert_keyword.py` and `pre_tokenize.py`)
+
 For data privacy, we only publish a small sample of our real data.
 
 # training procedure

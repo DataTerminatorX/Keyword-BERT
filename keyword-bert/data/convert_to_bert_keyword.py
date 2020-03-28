@@ -36,7 +36,6 @@ def match_ch(s, kw):
     cur_rs = []
     p1 = 0
     p2 = 0
-    start_matching = False
     while(p1+p2 < len(s)):
         if p2 == len(kw): # match succed
             kw_index += cur_rs
