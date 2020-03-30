@@ -1,7 +1,7 @@
 # project discription
 
 An implementation of the `Keyword-BERT` model mentioned 
-in my paper `Keyword-Attentive Deep Semantic Matching`
+in my paper [Keyword-Attentive Deep Semantic Matching](https://arxiv.org/abs/2003.11516)
 
 (**Plz cite this github repo if using this code or relevant ideas from this paper**)
 
