@@ -93,7 +93,7 @@ def main(in_file, out_file, drop_no_kw=None):
 def test_match_ch(s, kw):
     a = match_ch("ababcdaaabcab", "abc")
     print(a)
-    b = match_ch("中 国","中国")
+    b = match_ch("中 国".split(),"中国")
     print(b)
 
 
