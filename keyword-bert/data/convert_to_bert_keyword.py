@@ -36,13 +36,13 @@ def match_ch(s, kw):
     cur_rs = []
     p1 = 0
     p2 = 0
-    while(p1+p2 < len(s)):
+    while(p1+p2 <= len(s)):
         if p2 == len(kw): # match succed
             kw_index += cur_rs
             p2 = 0
             p1 += 1
             cur_rs = []
-        if s[p1+p2] == kw[p2]: # matching
+        if (p1 + p2) < len(s) and s[p1+p2] == kw[p2]: # matching
             cur_rs.append(p1+p2)
             p2 += 1
         else: # match failed
@@ -93,6 +93,8 @@ def main(in_file, out_file, drop_no_kw=None):
 def test_match_ch(s, kw):
     a = match_ch("ababcdaaabcab", "abc")
     print(a)
+    b = match_ch("中 国".split(),"中国")
+    print(b)
 
 
 if __name__ == "__main__":
